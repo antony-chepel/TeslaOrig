@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_reg"
+    tools:context=".RegistrationActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_reg"
+        android:layout_width="330dp"
+        android:layout_height="500dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="64dp"
+        app:cardBackgroundColor="#DCDCDC"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.31">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserratbold"
+                android:gravity="center"
+                android:text="Пройдите регистрацию"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserratbold"
+                android:gravity="center"
+                android:text="и откройте счет"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:textAlignment="textStart"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="7dp">
+
+                <EditText
+                    android:id="@+id/ed_1st_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_edit_text"
+                    android:fontFamily="@font/montserratregular"
+                    android:hint="Имя"
+                    android:padding="10dp"
+                    android:shadowColor="#888888"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="1"
+                    android:textColor="@color/black"
+                    android:textColorHint="#E3E3E3"
+                    android:textSize="13sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:textAlignment="textStart"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="7dp">
+
+                <EditText
+                    android:id="@+id/ed_second_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_edit_text"
+                    android:fontFamily="@font/montserratregular"
+                    android:hint="Фамилия"
+                    android:padding="10dp"
+                    android:shadowColor="#888888"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+
+                    android:shadowRadius="1"
+                    android:textColor="@color/black"
+                    android:textColorHint="#E3E3E3"
+                    android:textSize="13sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:textAlignment="textStart"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="7dp">
+
+                <EditText
+                    android:id="@+id/ed_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_edit_text"
+                    android:fontFamily="@font/montserratregular"
+                    android:hint="Электронная почта"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:shadowColor="#888888"
+                    android:shadowDx="1"
+
+                    android:shadowDy="1"
+                    android:shadowRadius="1"
+                    android:textColor="@color/black"
+                    android:textColorHint="#E3E3E3"
+                    android:textSize="13sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_5"
+                style="@style/Wide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:textAlignment="textStart"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="7dp">
+
+                <LinearLayout
+                    style="@style/Wide"
+                    android:orientation="horizontal">
+
+                    <com.hbb20.CountryCodePicker
+                        android:id="@+id/codePicker"
+                        style="@style/Wrap"
+                        android:layout_gravity="center"
+                        app:ccpDialog_backgroundColor="@color/white"
+                        app:ccp_autoDetectCountry="true"
+                        app:ccp_showArrow="false"
+                        app:ccp_textSize="13sp" />
+
+
+                    <EditText
+                        android:id="@+id/ed_phone"
+                        style="@style/Wide"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_edit_text"
+                        android:drawablePadding="15dp"
+                        android:fontFamily="@font/montserratregular"
+                        android:gravity="center_vertical"
+                        android:hint="Номер телефона"
+                        android:inputType="phone"
+                        android:padding="10dp"
+                        android:shadowColor="#888888"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="1"
+                        android:textColor="@color/black"
+                        android:textColorHint="#E3E3E3"
+                        android:textSize="13sp"
+                        app:hintTextColor="#888888" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/reg_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/bg_selector"
+                android:fontFamily="@font/montserratbold"
+                android:gravity="center_horizontal|top"
+                android:padding="10dp"
+                android:shadowColor="#888888"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:text="ЗАРЕГИСТРИРОВАТЬСЯ"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/teslalogo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

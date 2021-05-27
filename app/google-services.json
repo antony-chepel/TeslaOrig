@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "982344699142",
+    "project_id": "tesla-20526",
+    "storage_bucket": "tesla-20526.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:982344699142:android:4114c465178229a6132287",
+        "android_client_info": {
+          "package_name": "com.tony_fire.tesla"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "982344699142-b1k5i5o7qfnes4jhf477abt7g0p75n3l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEUWFznodg6vm3SLZeQ_g6DHyLsOHyC2A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "982344699142-b1k5i5o7qfnes4jhf477abt7g0p75n3l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
