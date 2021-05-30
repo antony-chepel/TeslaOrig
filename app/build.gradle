@@ -13,8 +13,8 @@ android {
         applicationId "com.tony_fire.tesla"
         minSdkVersion 19
         targetSdkVersion 30
-        versionCode 7
-        versionName "1.7"
+        versionCode 9
+        versionName "1.9"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -69,6 +69,7 @@ dependencies {
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
     implementation "com.squareup.okhttp3:okhttp:4.9.0"
-    implementation 'com.github.ed-george:AndroidVimeoExtractor:1.2.1'
+
+
 
 }

@@ -53,8 +53,10 @@ class MainActivity : AppCompatActivity() {
         player.pause()
     }
 
+
+
     private fun videoPlayer() {
-        val mediaItem: MediaItem = MediaItem.fromUri("http://drive.google.com/file/d/1rsbF7S3pIa3WZ3n6eKqmSSZXayO-aOMd/view")
+        val mediaItem: MediaItem = MediaItem.fromUri("http://video.pr0gram1.xyz/video/tesla/TeslaX.mp4.m3u8")
         binding.videoView.player = player
         binding.videoView.setShowBuffering(PlayerView.SHOW_BUFFERING_WHEN_PLAYING)
         player.setMediaItem(mediaItem)

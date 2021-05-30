@@ -7,6 +7,7 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
 
     <application
+        android:networkSecurityConfig="@xml/networkecurityconfig"
         android:name="com.tony_fire.tesla.AFApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_icon_tesla"
@@ -24,6 +25,7 @@
             android:screenOrientation="portrait"
         </activity>
         <activity android:name=".MainActivity">
+
             android:screenOrientation="portrait"
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
